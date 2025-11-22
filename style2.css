@@ -1,0 +1,87 @@
+:root {
+  --bg: #ffffff;
+  --card: #f3f3f3;
+  --text: #000;
+}
+
+.dark {
+  --bg: #0f0f0f;
+  --card: #1a1a1a;
+  --text: #f8f8f8;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Arial, sans-serif;
+  transition: 0.3s;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 25px;
+  background: var(--card);
+  border-bottom: 1px solid #444;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.theme-btn {
+  background: none;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  color: var(--text);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 10px #0003;
+}
+
+.upload-box {
+  border: 2px dashed #888;
+  padding: 40px;
+  text-align: center;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.upload-box:hover {
+  border-color: var(--text);
+}
+
+.upload-box input {
+  display: none;
+}
+
+#imagePreview img {
+  max-width: 100%;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+.tool-list {
+  list-style: none;
+  padding: 0;
+}
+
+.tool-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid #4444;
+}
