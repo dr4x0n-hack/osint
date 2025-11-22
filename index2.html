@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OSINT Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">🛰️ OSINT LAB</div>
+  <button id="themeToggle" class="theme-btn">🌙</button>
+</header>
+
+<main class="container">
+
+  <!-- Upload Box -->
+  <section class="card">
+    <h2>Image Analysis</h2>
+    <div class="upload-box" id="uploadBox">
+      <p>📁 Drag & Drop image here<br>or click to upload</p>
+      <input type="file" id="imageInput" accept="image/*">
+    </div>
+    <div id="imagePreview"></div>
+    <pre id="exifOutput"></pre>
+  </section>
+
+  <!-- Tools List -->
+  <section class="card">
+    <h2>OSINT Tools</h2>
+    <ul class="tool-list" id="toolList"></ul>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
