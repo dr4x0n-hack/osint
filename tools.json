@@ -1,0 +1,32 @@
+{
+  "image_osint": [
+    "Google Reverse Image Search",
+    "Yandex Image Search",
+    "TinEye",
+    "ExifTool (metadata)",
+    "FotoForensics (ELA)",
+    "Mapillary Image Explorer"
+  ],
+  "geolocation": [
+    "Google Earth",
+    "OpenStreetMap",
+    "Wikimapia",
+    "SunCalc",
+    "PeakVisor",
+    "GeoSpy AI"
+  ],
+  "social_osint": [
+    "Sherlock (username check)",
+    "WhatsMyName",
+    "NameCheckup",
+    "EmailRep",
+    "HaveIBeenPwned"
+  ],
+  "domain_osint": [
+    "DNSdumpster",
+    "crt.sh",
+    "Censys Search",
+    "Wayback Machine",
+    "Public WHOIS Lookup"
+  ]
+}
