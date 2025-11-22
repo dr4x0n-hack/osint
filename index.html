@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OSINT Image Toolkit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>OSINT Image Toolkit</h1>
+<p>Upload an image to extract GPS, EXIF metadata, and access reverse search tools.</p>
+
+<!-- Upload area -->
+<div class="upload-box" id="uploadBox">
+    <p>📁 Drag & Drop image here<br>or click to upload</p>
+    <input type="file" id="imageInput" accept="image/*">
+</div>
+
+<!-- GPS Location -->
+<div class="section" id="gpsSection" style="display:none;">
+    <h2>GPS Location</h2>
+    <p><b>Latitude:</b> <span id="lat"></span></p>
+    <p><b>Longitude:</b> <span id="lng"></span></p>
+
+    <a id="googleLink" target="_blank"><button>Open in Google Maps</button></a>
+    <a id="yandexLink" target="_blank"><button>Open in Yandex Maps</button></a>
+</div>
+
+<!-- Full EXIF Viewer -->
+<div class="section" id="exifSection" style="display:none;">
+    <h2>EXIF Metadata</h2>
+    <pre id="exifData"></pre>
+</div>
+
+<!-- Reverse Image Search -->
+<div class="section" id="reverseSection" style="display:none;">
+    <h2>Reverse Image Search</h2>
+    <button onclick="window.open('https://images.google.com/searchbyimage', '_blank')">Google Reverse Image</button>
+    <button onclick="window.open('https://yandex.com/images/', '_blank')">Yandex Images</button>
+    <button onclick="window.open('https://www.bing.com/images/search', '_blank')">Bing Visual Search</button>
+    <button onclick="window.open('https://tineye.com', '_blank')">TinEye Search</button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/exif-js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
